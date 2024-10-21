@@ -74,7 +74,8 @@ def detect_image():
 
     # Define the font size
     try:
-        font = ImageFont.truetype("arial.ttf", size=82)
+        font_path = "fonts/arial.ttf"
+        font = ImageFont.truetype(font_path, size=52)
     except IOError:
         font = ImageFont.load_default()
 
