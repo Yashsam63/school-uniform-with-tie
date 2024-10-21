@@ -118,7 +118,7 @@ def detect_image():
 
     # Return detection result
     if detected_school_uniform and detected_tie:
-        return jsonify({"status": "uniform_and_tie_detected"})
+        return jsonify({"status": "uniform_or_tie_detected"})
     elif detected_school_uniform:
         return jsonify({"status": "uniform_or_no_tie_detected"})
     elif detected_non_school_uniform and detected_tie:
